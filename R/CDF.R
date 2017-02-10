@@ -1,4 +1,6 @@
 # True CDF functions ----------------------------------------------------------
+# TODO: 1) Add function for density
+#       2) Generalize to arbitrary alpha_x, alpha_y, lambda_x, lambda_y
 
 cdfSub <- function(v, q, alpha1, alpha2, lambda1, lambda2) {
   #' Utility function
@@ -41,7 +43,7 @@ pgammaDif <- function(q, nx, ny, alpha, lambda) {
   lambda2 <- ny * lambda
 
   # integrate with adaptive quadrature
-  A <- integrate(cdfSub, lower = max(0, -x), upper = Inf, 
+  A <- integrate(cdfSub, lower = max(0, -q), upper = Inf, 
                  q = q, alpha1 = alpha1, alpha2 = alpha2,
                  lambda1 = lambda1, lambda2 = lambda2)$value
 

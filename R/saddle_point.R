@@ -1,4 +1,8 @@
 # saddle point approximation functions ----------------------------------------
+# TODO: 1) add warning if taking saddlepoint approximation of CDF at mean, or add
+#          correct formula for this situation
+#       2) Add normalized density estimate
+#       3) Generalize to arbitrary alpha_x, alpha_y, lambda_x, lambda_y
 
 K <- function(t, nx, ny, alpha, lambda) {
   #' cumulant generating function (CGF)
@@ -10,7 +14,7 @@ K <- function(t, nx, ny, alpha, lambda) {
   #' @param lambda common parameter value
   #' @export
 
-  -alpha*(nx*log(1-t/(nx*lambda)) + ny*log(1+t/(ny*lambda)))
+  -alpha * (nx * log(1 - t / (nx * lambda)) + ny * log(1 + t / (ny * lambda)))
 }
 
 Kprime <- function(t, nx, ny, alpha, lambda) {
