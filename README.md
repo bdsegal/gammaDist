@@ -1,6 +1,6 @@
 # gammaDist
 
-This is an R package that implements distribution functions for the difference in means of gamma random variables under the null of equal distributions, including the cumulative distribution function (CDF) derived by Klar (2015), and saddlepoint approximations to the CDF and density. In particular, if $X_i \sim \text{Gamma}(\alpha, \lambda), i=1, \ldots, n_x$ and $Y_j \sim \text{Gamma}(\alpha, \lambda), j=1, \ldots, n_y$, gammDist computes the CDF and density for the random variable $Z = (1/n_x) \sum_i X_i - (1/n_y) \sum_j Y_j$. gammaDist also includes a function for computing the maximum likelihood and method of moments estimates for iid gamma random variables.
+This is an R package that implements gamma difference distributions under the null of equal distributions, including the cumulative distribution function (CDF) derived by Klar (2015), and saddlepoint approximations to the CDF and density. In particular, if $X_i \sim \text{Gamma}(\alpha, \lambda), i=1, \ldots, n_x$ and $Y_j \sim \text{Gamma}(\alpha, \lambda), j=1, \ldots, n_y$, gammDist computes the CDF and density for the random variable $Z = (1/n_x) \sum_i X_i - (1/n_y) \sum_j Y_j$. gammaDist also includes a function for computing the maximum likelihood and method of moments estimates for iid gamma random variables.
 
 # Installation
 
