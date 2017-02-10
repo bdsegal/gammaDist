@@ -1,4 +1,5 @@
 # functions for getting MLE ---------------------------------------------------
+# TODO: write print function for nice output
 
 g <- function(N, muHat, sumLog, alpha) {
   #' first derivative of log likelihood
@@ -73,6 +74,10 @@ gammaFit <- function(z, maxIter = 1000, tol = 1e-4) {
   MLE <- c(alphaHat[k - 1], lambdaHat)
   MoM <- c(alpha0, lambda0)
   names(MLE) <- names(MoM) <- c("alpha", "lambda")
+
+  if(!conv) {
+    warning("Did not converge")
+  }
 
   return(list(MLE = MLE, MoM = MoM, ll = ll[2:(k-1)], alphaHat = alphaHat[2:(k-1)], 
               k = k-1, conv = conv))
