@@ -44,7 +44,6 @@ gammaFit <- function(z, maxIter = 1000, tol = 1e-4) {
   #' fit$MLE
   #' fit$MoM
 
-
   N <- length(z)
   muHat <- mean(z)
   sigmaHat <- sd(z)

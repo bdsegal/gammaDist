@@ -40,12 +40,10 @@ pgammaDif <- function(q, nx, ny, alpha, lambda) {
   lambda1 <- nx * lambda
   lambda2 <- ny * lambda
 
-  delta <- 0.0001
-
   # integrate with adaptive quadrature
   A <- integrate(cdfSub, lower = max(0, -x), upper = Inf, 
-            q = q, alpha1 = alpha1, alpha2 = alpha2,
-            lambda1 = lambda1, lambda2 = lambda2)$value
+                 q = q, alpha1 = alpha1, alpha2 = alpha2,
+                 lambda1 = lambda1, lambda2 = lambda2)$value
 
   exp(alpha2*log(lambda2) - lgamma(alpha1) - lgamma(alpha2) + log(A))
 }
