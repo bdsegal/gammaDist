@@ -22,4 +22,13 @@ This function computes the true CDF for the difference in means \eqn{\bar{x} - \
 of gamma random variables under the null of equality in distributions.
 CDF derived by Klar (2015).
 }
+\examples{
+nx <- 60
+ny <- 60
+alpha <- 1
+lambda <- 4
+q <- seq(-0.2, 0.2, 0.001)
+plot(q, pgammaDif(q = q, nx, ny, alpha, lambda),
+     type = "l", ylab = "F(q)")
+}
 

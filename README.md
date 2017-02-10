@@ -5,7 +5,6 @@ This is an R package that implements distribution functions for the difference i
 # Installation
 
 ```{r}
-# install.packages("devtools")
 # library("devtools")
 install_github("bdsegal/gammaDist")
 ```

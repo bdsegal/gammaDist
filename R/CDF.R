@@ -25,6 +25,14 @@ pgammaDif <- function(q, nx, ny, alpha, lambda) {
   #' @param ny samle size of second group
   #' @param alpha common parameter value
   #' @param lambda common parameter value
+  #' @examples
+  #' nx <- 60
+  #' ny <- 60
+  #' alpha <- 1
+  #' lambda <- 4
+  #' q <- seq(-0.2, 0.2, 0.001)
+  #' plot(q, pgammaDif(q = q, nx, ny, alpha, lambda),
+  #'      type = "l", ylab = "F(q)")
   #' @export
 
   alpha1 <- nx * alpha

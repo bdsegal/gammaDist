@@ -23,4 +23,13 @@ the difference in means, \eqn{\bar{x} - \bar{y}} of gamma
 random variables under the null of equal distributions. Only valid
 for \eqn{\bar{x} - \bar{y} \ne 0}.
 }
+\examples{
+nx <- 60
+ny <- 60
+alpha <- 1
+lambda <- 4
+q <- seq(-0.2, 0.2, 0.001)
+plot(q, pgammaDifSaddle(q = q, nx, ny, alpha, lambda),
+     type = "l", ylab = "F(q)")
+}
 

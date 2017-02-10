@@ -65,6 +65,14 @@ dgammaDifSaddle <- function(z, nx, ny, alpha, lambda) {
   #' @param ny sample size of second group
   #' @param alpha common parameter value
   #' @param lambda common parameter value
+  #' @examples
+  #' nx <- 60
+  #' ny <- 60
+  #' alpha <- 1
+  #' lambda <- 4
+  #' z <- seq(-0.2, 0.2, 0.001)
+  #' plot(z, dgammaDifSaddle(z = z, nx, ny, alpha, lambda),
+  #'      type = "l", ylab = "f(q)")
   #' @export
 
   tHat <- sapply(z, function(z) {uniroot(f = saddleEqn,
@@ -87,6 +95,14 @@ pgammaDifSaddle <- function(q, nx, ny, alpha, lambda, lower.tail = TRUE) {
   #' @param ny sample size of second group
   #' @param alpha common parameter value
   #' @param lambda common parameter value
+  #' @examples
+  #' nx <- 60
+  #' ny <- 60
+  #' alpha <- 1
+  #' lambda <- 4
+  #' q <- seq(-0.2, 0.2, 0.001)
+  #' plot(q, pgammaDifSaddle(q = q, nx, ny, alpha, lambda),
+  #'      type = "l", ylab = "F(q)")
   #' @export
   
   tHat <- sapply(q, function(q) {uniroot(f = saddleEqn,

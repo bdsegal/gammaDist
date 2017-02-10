@@ -22,4 +22,13 @@ This function calculates the saddlepoint density for difference in means,
 \eqn{\bar{x} - \bar{y}} of gamma random variables under the null of equal
  distributions.
 }
+\examples{
+nx <- 60
+ny <- 60
+alpha <- 1
+lambda <- 4
+z <- seq(-0.2, 0.2, 0.001)
+plot(z, dgammaDifSaddle(z = z, nx, ny, alpha, lambda),
+     type = "l", ylab = "f(q)")
+}
 
