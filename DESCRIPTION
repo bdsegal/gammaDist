@@ -1,0 +1,9 @@
+Package: gammaDist
+Title: Distribution functions and MLE for gamma random variables 
+Version: 0.0.0.9000
+Authors@R: person("Brian", "Segal", email = "bdsegal@umich.edu", role = c("aut", "cre"))
+Description: This package implements distribution functions for gamma random variables, including the cumulative distribution function (CDF) for the difference in the means of gamma random variables, a saddlepoint approximation to the CDF, and a Newton-Raphson routine for computing the maximum likelihood estimates for iid gamma random variables. The CDF for the difference in means is derived by Klar (2015).
+Depends: R (>= 3.1), zipfR
+License: GPL (>= 2)
+LazyData: true
+RoxygenNote: 5.0.1
