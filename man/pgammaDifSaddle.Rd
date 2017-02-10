@@ -19,8 +19,8 @@ pgammaDifSaddle(q, nx, ny, alpha, lambda, lower.tail = TRUE)
 }
 \description{
 This function calculates the saddlepoint cumulative distribution for 
-the difference in means, \eqn{\bar{x} - \bar{y}} of observations of gamma
-random variables under the null of equality in distributions. Only valid
+the difference in means, \eqn{\bar{x} - \bar{y}} of gamma
+random variables under the null of equal distributions. Only valid
 for \eqn{\bar{x} - \bar{y} \ne 0}.
 }
 

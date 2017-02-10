@@ -18,7 +18,7 @@ pgammaDif <- function(q, nx, ny, alpha, lambda) {
   #' True CDF for difference in means \eqn{\bar{x} - \bar{y}}
   #'
   #' This function computes the true CDF for the difference in means \eqn{\bar{x} - \bar{y}}
-  #' of observations of gamma random variables, under the null of equality in distributions.
+  #' of gamma random variables under the null of equality in distributions.
   #' CDF derived by Klar (2015).
   #' @param q scalar or vector of quantiles
   #' @param nx sample size of first group

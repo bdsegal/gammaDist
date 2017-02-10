@@ -19,7 +19,7 @@ dgammaDifSaddle(z, nx, ny, alpha, lambda)
 }
 \description{
 This function calculates the saddlepoint density for difference in means,
-\eqn{\bar{x} - \bar{y}} of observations of gamma random variables
-under the null of equality in distributions.
+\eqn{\bar{x} - \bar{y}} of gamma random variables under the null of equal
+ distributions.
 }
 

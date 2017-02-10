@@ -58,8 +58,8 @@ dgammaDifSaddle <- function(z, nx, ny, alpha, lambda) {
   #' Saddlepoint density for difference in means, \eqn{\bar{x} - \bar{y}}
   #'
   #' This function calculates the saddlepoint density for difference in means,
-  #' \eqn{\bar{x} - \bar{y}} of observations of gamma random variables
-  #' under the null of equality in distributions.
+  #' \eqn{\bar{x} - \bar{y}} of gamma random variables under the null of equal
+  #'  distributions.
   #' @param z scalar or vector of quantiles
   #' @param nx sample size of first group
   #' @param ny sample size of second group
@@ -79,8 +79,8 @@ pgammaDifSaddle <- function(q, nx, ny, alpha, lambda, lower.tail = TRUE) {
   #' Saddlepoint distribution for difference in means, \eqn{\bar{x} - \bar{y}}
   #'
   #' This function calculates the saddlepoint cumulative distribution for 
-  #' the difference in means, \eqn{\bar{x} - \bar{y}} of observations of gamma
-  #' random variables under the null of equality in distributions. Only valid
+  #' the difference in means, \eqn{\bar{x} - \bar{y}} of gamma
+  #' random variables under the null of equal distributions. Only valid
   #' for \eqn{\bar{x} - \bar{y} \ne 0}.
   #' @param q scalar or vector of quantiles
   #' @param nx sample size of first group

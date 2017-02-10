@@ -19,7 +19,7 @@ pgammaDif(q, nx, ny, alpha, lambda)
 }
 \description{
 This function computes the true CDF for the difference in means \eqn{\bar{x} - \bar{y}}
-of observations of gamma random variables, under the null of equality in distributions.
+of gamma random variables under the null of equality in distributions.
 CDF derived by Klar (2015).
 }
 
