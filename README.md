@@ -1,6 +1,7 @@
 # gammaDist
 
-This is an R package that implements gamma difference distributions under the null of equal distributions, including the cumulative distribution function (CDF) derived by Klar (2015) and saddlepoint approximations to the distribution and density (Butler, 2007). In particular, for $$X_i \sim \text{Gamma}(\alpha, \lambda), i=1, \ldots, n_x \quad \text{ and } \quad Y_j \sim \text{Gamma}(\alpha, \lambda), j=1, \ldots, n_y,$$ `gammDist` computes the distribution and density for the random variable $$Z = \frac{1}{n_x} \sum_i X_i - \frac{1}{n_y} \sum_j Y_j.$$ 
+This is an R package that implements gamma difference distributions under the null of equal distributions, including the cumulative distribution function (CDF) derived by Klar (2015) and saddlepoint approximations to the distribution and density (Butler, 2007). In particular, for $X_i \sim \text{Gamma}(alpha, \lambda), i=1, \ldots, n_x$ and $Y_j \sim \text{Gamma}(\alpha, \lambda), j=1, \ldots, n_y,$ `gammDist` computes the distribution and density of $Z = \frac{1}{n_x} \sum_i X_i - \frac{1}{n_y} \sum_j Y_j.$
+
 Due to large gamma and incomplete gamma function values, the true distribution cannot always be computed. However, the saddlepoint approximation is accurate far into the tails (e.g. for left tail probabilities around 10<sup>-200</sup>). We use the saddlepoint approximation of Lugannani and Rice (1980) for the cumulative distribution function.
 
 `gammaDist` also includes a function for computing the maximum likelihood and method of moments estimates for iid gamma random variables.
