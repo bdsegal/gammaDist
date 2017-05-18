@@ -46,7 +46,8 @@ plot(q, dgammaDifSaddle(z = q, nx, ny, alpha, lambda),
 ```
 
 ## References
-Butler, R. W. (2007). Saddlepoint approximations with applications, volume 22. Cambridge University Press.
+Butler, R. W. (2007). Saddlepoint approximations with applications. Cambridge University
+Press, Cambridge, UK.
 
 Klar, B. (2015). A note on gamma difference distributions. Journal of Statistical Computation and Simulation 85, 3708–3715.
 
