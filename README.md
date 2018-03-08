@@ -6,6 +6,8 @@ Due to large gamma and incomplete gamma function values, the true distribution c
 
 `gammaDist` also includes a function for computing the maximum likelihood and method of moments estimates for iid gamma random variables.
 
+For additional details, please see Appendix B.2, pages 14-17, in the web-based supplementary materials for Segal et al. (2017), available freely under "supporting information" at [doi:10.1111/biom.12731](http://dx.doi.org/10.1111/biom.12731).
+
 # Installation
 
 ```{r}
@@ -46,9 +48,10 @@ plot(q, dgammaDifSaddle(z = q, nx, ny, alpha, lambda),
 ```
 
 ## References
-Butler, R. W. (2007). Saddlepoint approximations with applications. Cambridge University
-Press, Cambridge, UK.
+Butler, R. W. (2007). Saddlepoint approximations with applications. Cambridge University Press, Cambridge, UK.
 
 Klar, B. (2015). A note on gamma difference distributions. Journal of Statistical Computation and Simulation 85, 3708–3715.
 
 Lugannani, R. and Rice, S. (1980). Saddle point approximation for the distribution of the sum of independent random variables. Advances in applied probability 12, 475–490.
+
+Segal, B. D., Braun, T., Elliott, M. R. and Jiang, H. (2017). Fast approximation of small p-values in permutation tests by partitioning the permutations. Biometrics. [doi:10.1111/biom.12731](http://dx.doi.org/10.1111/biom.12731) (non-final version available at [arXiv:1605.03992](https://arxiv.org/abs/1605.03992))
